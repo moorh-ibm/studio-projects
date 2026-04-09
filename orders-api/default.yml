@@ -10,3 +10,8 @@ spec:
   qos:
     withQuota:
       unlimited: {}
+  extensions:
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        telemetry: {}
