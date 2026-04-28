@@ -1,0 +1,15 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: nano-echo-sequence
+  namespace: echo-api
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: echo-api:set-message:1.0
+  monitoring:
+    $ref: echo-api:telemetry:1.0

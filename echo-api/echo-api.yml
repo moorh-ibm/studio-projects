@@ -12,4 +12,4 @@ spec:
   cors:
     $ref: echo-api:cors-echo-api:1.0
   policy-sequence:
-    - $ref: echo-api:assembly-echo-api:1.0
+    - $ref: echo-api:nano-echo-sequence:1.0

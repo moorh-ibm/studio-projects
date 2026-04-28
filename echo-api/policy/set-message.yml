@@ -1,0 +1,15 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: set-message
+  namespace: echo-api
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  valueType: jsonata
+  messageBody:
+    messageName: response
+    value: $queryParameter(message,text)
