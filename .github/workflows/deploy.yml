@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  apic-deploy-test:
+    runs-on: ubuntu-latest
+    name: API Deployment
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ibm-apiconnect/actions@v12
+      with:
+        manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
+        api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
+        provider-org: 'ricky'
+        catalog: 'sandbox'
+        apikey: ${{ secrets.apikey }}
+        product-file: 'orders-api'
