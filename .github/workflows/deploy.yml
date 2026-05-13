@@ -9,7 +9,7 @@ jobs:
     name: API Deployment
     steps:
     - uses: actions/checkout@v2
-    - uses: ibm-apiconnect/actions@v12
+    - uses: ibm-apiconnect/actions@v12.1
       with:
         manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
         api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
