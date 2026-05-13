@@ -16,4 +16,4 @@ jobs:
         provider-org: 'ricky'
         catalog: 'sandbox'
         apikey: ${{ secrets.apikey }}
-        product-file: 'orders-api'
+        project: 'orders-api'
