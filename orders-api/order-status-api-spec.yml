@@ -16,6 +16,7 @@ externalDocs:
   url: https://ibm.com
 servers:
   - url: https://sample-api.us-east-a.apiconnect.automation.ibm.com/orders/order
+    x-internal: true
 tags:
   - name: order-status
     description: Everything about IBM DataPower Nano Gateway
@@ -47,6 +48,7 @@ paths:
                   order_number:
                     title: Order Number
                     type: string
+                    maxLength: 10                    
                     example: ORD00989792
                   tracking_status:
                     title: Tracking Status
@@ -55,10 +57,12 @@ paths:
                   shipped_at:
                     title: Date Shipped
                     type: string
+                    maxLength: 10
                     format: date-time
                   created_at:
                     title: Date Order Created
                     type: string
+                    maxLength: 10
                     format: date-time
                   status:
                     title: Order Status
@@ -71,3 +75,5 @@ paths:
                   tracking_reference:
                     title: Tracking Reference
                     type: string
+                    maxLength: 20
+                    example: TRK000987654321
