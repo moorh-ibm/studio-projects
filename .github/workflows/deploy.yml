@@ -16,8 +16,29 @@ jobs:
         provider-org: 'ricky'
         apikey: ${{ secrets.apikey }}
         api-spec: 'orders-api/order-status-api-spec.yml'
-  deploy-api:
+  deploy-api-sandbox:
     runs-on: ubuntu-latest
+    needs: validate-api
+    name: API Deployment
+    steps:
+    - uses: actions/checkout@v6
+    - uses: ibm-apiconnect/actions@v12.1
+      with:
+        manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
+        api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
+        provider-org: 'ricky'
+        catalog: 'sandbox'
+        apikey: ${{ secrets.apikey }}
+        project: 'orders-api'
+  test-api:
+    runs-on: ubuntu-latest
+    needs: deploy-api-sandbox
+    name: API Testing
+    steps:
+    - uses: actions/checkout@v6
+  deploy-api-preprod:
+    runs-on: ubuntu-latest
+    needs: test-api
     name: API Deployment
     steps:
     - uses: actions/checkout@v6
