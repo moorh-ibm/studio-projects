@@ -15,4 +15,4 @@ jobs:
         api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
         provider-org: 'ricky'
         apikey: ${{ secrets.apikey }}
-        api-spec: 'orders-api/order-status-api-spec.yaml'
+        api-spec: 'orders-api/order-status-api-spec.yml'
