@@ -45,6 +45,7 @@ paths:
               description: CORS header
               schema:
                 type: string
+                maxLength: 255
                 example: '*'
             X-RateLimit-Limit:
               description: Request limit per hour
