@@ -31,11 +31,9 @@ spec:
         shipped_at:
           title: Date Shipped
           type: string
-          format: date-time
         created_at:
           title: Date Order Created
           type: string
-          format: date-time
         status:
           title: Order Status
           type: string
