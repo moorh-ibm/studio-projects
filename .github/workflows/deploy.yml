@@ -6,7 +6,7 @@ on:
 jobs:
   validate-api:
     runs-on: ubuntu-latest
-    name: Validate API
+    name: Validate API with rulesets
     steps:
     - uses: actions/checkout@v6
     - uses: ibm-apiconnect/actions@governance
@@ -33,7 +33,7 @@ jobs:
   test-api:
     runs-on: ubuntu-latest
     needs: deploy-api-sandbox
-    name: API Testing
+    name: Functional Test
     steps:
     - uses: actions/checkout@v6
     - uses: ibm-apiconnect/actions@test
@@ -48,7 +48,7 @@ jobs:
         test-endpoint: 'https://order-sandbox-ricky.api-n-ea7a.us-east-b.apiconnect.ibmappdomain.cloud/1.0/orders/order'
   load-test-api:
     needs: deploy-api-sandbox
-    name: Load Test API
+    name: k6 Load Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -60,7 +60,7 @@ jobs:
   deploy-api-preprod:
     runs-on: ubuntu-latest
     needs: [test-api, load-test-api]
-    name: API Deployment
+    name: Deploy API to UAT
     steps:
     - uses: actions/checkout@v6
     - uses: ibm-apiconnect/actions@v12.1
