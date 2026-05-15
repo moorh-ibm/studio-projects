@@ -16,5 +16,6 @@ spec:
     - $ref: orders-api:invoke-tracking:1.0
     - $ref: orders-api:parse-tracking:1.0
     - $ref: orders-api:set-response:1.0
+    - $ref: orders-api:Set-3LCG4:1.0
   monitoring:
     $ref: orders-api:Telemetry-GJOSe:1.0

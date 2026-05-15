@@ -3,11 +3,12 @@ apiVersion: api.ibm.com/v1
 metadata:
   namespace: orders-api
   name: successful-lookup
-  version: "1.0"
+  version: '1.0'
   tags: []
 spec:
   api:
-    $ref: orders-api:order-status-api:1
+    $endpoint: >-
+      https://order-sandbox-ricky.api-n-ea7a.us-east-b.apiconnect.ibmappdomain.cloud/1.0/orders/order
   request:
     - method: GET
       resource: /string
