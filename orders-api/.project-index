@@ -62,27 +62,13 @@
       "filePath": "orders-api/tests/successful-lookup.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1778851162179,
+      "lastIndexed": 1778856406282,
       "schemaVersion": 1,
       "kind": "test",
       "name": "successful-lookup",
       "namespace": "orders-api",
       "version": "1.0",
-      "contentHash": "dfd4719bad1a8f46"
-    },
-    {
-      "id": "787bbe91-1eef-400b-b4ec-2ab529eb3b34:0",
-      "projectId": "SuDdErDf",
-      "filePath": "policies/Set-3LCG4.yml",
-      "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1778851052139,
-      "schemaVersion": 1,
-      "kind": "Set",
-      "name": "Set-3LCG4",
-      "namespace": "orders-api",
-      "version": "1.0",
-      "contentHash": "0db84e8f8cd3f257"
+      "contentHash": "bcffbdacd82a201d"
     },
     {
       "id": "93f8e540-58fd-4a49-b31e-3d6b01cfda73:0",
@@ -141,13 +127,13 @@
       "filePath": "orders-api/tests/environment-order-demo.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1778850812459,
+      "lastIndexed": 1778856370104,
       "schemaVersion": 1,
       "kind": "environment",
       "name": "order-demo-environment",
       "namespace": "orders-api",
       "version": "1.0",
-      "contentHash": "d1b607be2cc0f1ed"
+      "contentHash": "48cb695cd0d6accc"
     },
     {
       "id": "a657c443-d222-40af-a3c3-ed8f0778b2bd:0",
@@ -201,6 +187,20 @@
       "contentHash": "08130e686b22d27f"
     },
     {
+      "id": "ba708540-19fb-428c-8666-311ed9723f2b:0",
+      "projectId": "SuDdErDf",
+      "filePath": "orders-api/policies/Set-3LCG4.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1778856370103,
+      "schemaVersion": 1,
+      "kind": "Set",
+      "name": "Set-3LCG4",
+      "namespace": "orders-api",
+      "version": "1.0",
+      "contentHash": "0db84e8f8cd3f257"
+    },
+    {
       "id": "c2738e90-dd76-404c-a6ce-0f26790af959:0",
       "projectId": "SuDdErDf",
       "filePath": "orders-api/policies/invoke-tracking.yml",
@@ -213,20 +213,6 @@
       "namespace": "orders-api",
       "version": "1.0",
       "contentHash": "267ba207ea117552"
-    },
-    {
-      "id": "dd641890-cdac-4f30-ad83-65c3e3228a3a:0",
-      "projectId": "SuDdErDf",
-      "filePath": "policies/Set-3I62w.yml",
-      "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1778850919580,
-      "schemaVersion": 1,
-      "kind": "Set",
-      "name": "Set-3I62w",
-      "namespace": "orders-api",
-      "version": "1.0",
-      "contentHash": "2e9098b90bfafff1"
     },
     {
       "id": "e776a077-8dc5-465c-b197-7627619030b1:0",
@@ -248,13 +234,13 @@
       "filePath": "orders-api/tests/GET-string-200.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1778851856396,
+      "lastIndexed": 1778856471765,
       "schemaVersion": 1,
       "kind": "assertion",
       "name": "GET-string-200",
       "namespace": "orders-api",
       "version": "1.0",
-      "contentHash": "1a59f351efd6eec6"
+      "contentHash": "b1710dd44ae0a3f6"
     },
     {
       "id": "ff17ef2f-dc70-423b-a76e-4c69f76f9f6d:0",
@@ -295,18 +281,6 @@
       "isValid": true,
       "createdAt": 1775724895042,
       "lastValidated": 1775724895042
-    },
-    {
-      "id": "41eec1de-7916-4a69-88b8-1afa354e1aaa",
-      "projectId": "SuDdErDf",
-      "sourceNodeId": "b310178f-e2e1-4566-b24a-cca42d53036b:0",
-      "targetNodeId": "787bbe91-1eef-400b-b4ec-2ab529eb3b34:0",
-      "targetRefType": "same-project",
-      "targetRefString": "orders-api:Set-3LCG4:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1778851037954,
-      "lastValidated": 1778851052150
     },
     {
       "id": "5eb2d0d5-e0ff-4358-8dde-964fbeab16bd",
@@ -390,7 +364,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1778850812467,
-      "lastValidated": 1778851856526
+      "lastValidated": 1778856471777
     },
     {
       "id": "adf740cb-ca1f-47bc-91a3-6c99aefb2c2d",

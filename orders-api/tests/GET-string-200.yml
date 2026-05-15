@@ -15,3 +15,7 @@ spec:
     key: responseHeaders.content-type
     action: equals
     value: application/json
+  - name: Check order number
+    key: responseBody
+    value: order_number
+    action: haveProperty
