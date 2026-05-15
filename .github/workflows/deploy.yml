@@ -45,7 +45,7 @@ jobs:
         apikey: ${{ secrets.apikey }}
         project: 'orders-api'
         test-name: orders-api:successful-lookup:1.0
-        test-endpoint: 'https://order-sandbox-ricky.api-n-ea7a.us-east-b.apiconnect.ibmappdomain.cloud/1.0/orders/order/ORDER123'
+        test-endpoint: 'https://order-sandbox-ricky.api-n-ea7a.us-east-b.apiconnect.ibmappdomain.cloud/1.0/orders/order'
   deploy-api-preprod:
     runs-on: ubuntu-latest
     needs: test-api
