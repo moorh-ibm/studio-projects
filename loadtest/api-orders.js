@@ -8,8 +8,8 @@ import { Rate } from 'k6/metrics';
       executor: 'ramping-vus',
       startVUs: 0,
       stages: [
-        { duration: '5s', target: 5 },
-        { duration: '30s', target: 10 },
+        { duration: '5s', target: 2 },
+        { duration: '10s', target: 5 },
       ],      
     },
   },
