@@ -1,0 +1,49 @@
+kind: assertion
+metadata:
+  version: '1.0'
+  namespace: orders-api
+  name: GET-string-200
+  tags: []
+apiVersion: api.ibm.com/v1
+spec:
+  - name: Validate the response status code
+    key: code
+    action: equals
+    value: 200
+  - name: Validate content type header
+    key: responseHeaders.content-type
+    action: equals
+    value: application/json
+  - name: Validate response schema
+    key: json()
+    action: validateSchema
+    value:
+      title: Order Details
+      type: object
+      properties:
+        order_number:
+          title: Order Number
+          type: string
+        tracking_status:
+          title: Tracking Status
+          type: object
+          properties: {}
+        shipped_at:
+          title: Date Shipped
+          type: string
+          format: date-time
+        created_at:
+          title: Date Order Created
+          type: string
+          format: date-time
+        status:
+          title: Order Status
+          type: string
+          enum:
+            - SHIPPED
+            - PICKED
+            - PENDING
+            - DELIVERED
+        tracking_reference:
+          title: Tracking Reference
+          type: string

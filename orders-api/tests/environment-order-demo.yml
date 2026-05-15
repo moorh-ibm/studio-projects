@@ -1,0 +1,9 @@
+kind: environment
+apiVersion: api.ibm.com/v1
+metadata:
+  name: order-demo-environment
+  version: "1.0"
+  namespace: orders-api
+  tags: []
+spec:
+  variables: []

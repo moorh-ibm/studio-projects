@@ -1,0 +1,21 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  namespace: orders-api
+  name: successful-lookup
+  version: "1.0"
+  tags: []
+spec:
+  api:
+    $ref: orders-api:order-status-api:1
+  request:
+    - method: GET
+      resource: /string
+      headers:
+        - key: accept
+          value: application/json
+      parameters: []
+      assertions:
+        $ref: orders-api:GET-string-200:1.0
+  environment:
+    $ref: orders-api:order-demo-environment:1.0
