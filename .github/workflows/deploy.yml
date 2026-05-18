@@ -9,7 +9,7 @@ jobs:
     name: Validate API with rulesets
     steps:
     - uses: actions/checkout@v6
-    - uses: ibm-apiconnect/governance@v12
+    - uses: ibm-apiconnect/actions/governance@v12
       with:
         manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
         api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
@@ -22,7 +22,7 @@ jobs:
     name: Deploy API to Sandbox
     steps:
     - uses: actions/checkout@v6
-    - uses: ibm-apiconnect/deploy@v12
+    - uses: ibm-apiconnect/actions/deploy@v12
       with:
         manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
         api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
@@ -36,7 +36,7 @@ jobs:
     name: Functional Test
     steps:
     - uses: actions/checkout@v6
-    - uses: ibm-apiconnect/testing@v12
+    - uses: ibm-apiconnect/actions/testing@v12
       with:
         manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
         api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
@@ -63,7 +63,7 @@ jobs:
     name: Deploy API to UAT
     steps:
     - uses: actions/checkout@v6
-    - uses: ibm-apiconnect/deploy@v12
+    - uses: ibm-apiconnect/actions/deploy@v12
       with:
         manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
         api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
