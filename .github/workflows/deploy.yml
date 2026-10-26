@@ -22,10 +22,12 @@ jobs:
     name: Deploy API to Sandbox
     steps:
     - uses: actions/checkout@v6
-    - uses: ibm-apiconnect/actions/deploy@v12
+    - uses: ibm-apiconnect/actions/deploy@no-toolkit
       with:
         manager-host: api-manager.us-east-b.apiconnect.automation.ibm.com
         api-host: platform-api.us-east-b.apiconnect.automation.ibm.com
+        client-id: 599b7aef-8841-4ee2-88a0-84d49c4d6ff2
+        client-secret: ${{ secrets.client_secret }}
         provider-org: 'ricky'
         catalog: 'sandbox'
         apikey: ${{ secrets.apikey }}
