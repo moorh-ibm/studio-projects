@@ -72,6 +72,6 @@ jobs:
         client-id: 599b7aef-8841-4ee2-88a0-84d49c4d6ff2
         client-secret: ${{ secrets.client_secret }}        
         provider-org: 'ricky'
-        catalog: 'sandbox'
+        catalog: 'uat'
         apikey: ${{ secrets.apikey }}
         project: 'orders-api'
